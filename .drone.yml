@@ -11,8 +11,8 @@ steps:
 - name: publish
   image: plugins/docker
   when:
-    event:
-      - tag
+    branch: master
+    event: push
   settings:
     repo: heywesty/heywesty.com
     username:
