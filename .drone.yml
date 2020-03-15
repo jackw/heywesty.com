@@ -2,11 +2,11 @@ kind: pipeline
 name: default
 
 steps:
-  - name: test
+  - name: build
     image: node:alpine
     commands:
       - npm install
-      - npm test
+      - npm build
 
 - name: publish
   image: plugins/docker
