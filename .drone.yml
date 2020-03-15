@@ -8,15 +8,15 @@ steps:
       - npm install
       - npm build
 
-  - name: publish
-    image: plugins/docker
-    when:
-      branch: master
-      event: push
-    settings:
-      repo: heywesty/heywesty.com
-      username:
-        from_secret: docker_username
-      password:
-        from_secret: docker_password
-      auto_tag: true
+  # - name: publish
+  #   image: plugins/docker
+  #   when:
+  #     branch: master
+  #     event: push
+  #   settings:
+  #     repo: heywesty/heywesty.com
+  #     username:
+  #       from_secret: docker_username
+  #     password:
+  #       from_secret: docker_password
+  #     auto_tag: true
