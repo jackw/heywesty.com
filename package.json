@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development parcel src/index.html --open",
-    "build": "NODE_ENV=production parcel build src/index.html --public-url ./"
+    "start": "NODE_ENV=development parcel src/index.html src/grafana-presentation/index.html --open",
+    "build": "NODE_ENV=production parcel build src/index.html src/grafana-presentation/index.html"
   },
   "author": "",
   "license": "ISC",
