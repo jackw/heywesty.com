@@ -1064,8 +1064,7 @@ h3 [class*='bg-'] {
 /*== 2.2. Typography Classes = .text- == */
 .text-intro,
 [class*='content-'] p {
-  font-size: 2.4rem;
-  line-height: 4rem; }
+  font-size: 2.4rem; }
 
 /* -- Serif -- */
 .text-serif,
@@ -1105,7 +1104,7 @@ h1 span {
   @media (min-width: 768px) {
     .text-emoji {
       font-size: 12.8rem;
-      line-height: 16rem; } }
+      line-height: 1; } }
 
 /* -- Numbers (results, sales... 23,478,289 iphones) -- */
 .text-data {
@@ -1893,6 +1892,7 @@ About, Philosophy...
 6.5 Specs/Items: <ul class="flexblock specs">
 ======================================================= */
 .specs li {
+  line-height: 1.25;
   text-align: left;
   width: 100%; }
   .specs li:after {
