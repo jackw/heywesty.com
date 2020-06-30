@@ -618,18 +618,20 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
               <div class="column">
                 <h1>The result</h1>
                 <p class="text-intro">
-                  Using Drone with Semantic release gives me a workflow that
-                  meets the requirements.
+                  By writing commit messages with semver in mind we can take
+                  advantage of semantic release to version and publish packages
+                  appropriately.
                 </p>
-                <p>
-                  Fun fact: Drone can use any docker image from docker hub
-                  giving it a huge ecosystem to work with.
+                <p class="text-intro">
+                  Using Drone with Semantic release gives us a workflow that
+                  meets the requirements for automated publishing and updating
+                  documentation.
                 </p>
               </div>
               <div class="column">
                 <h3>Semantic Release</h3>
                 <img
-                  src="static/images/semantic-release-example.png"
+                  src="static/images/semver.png"
                   alt="semantic release example"
                   style="margin-top: 0;"
                 />
@@ -650,22 +652,21 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
               <div class="column">
                 <ul class="flexblock specs">
                   <li class="text-intro">
-                    ❌Sass is not really geared up for this... Ramda is all
-                    about currying. Sass cannot return a function from a
+                    ❌ Ramda is all about currying. Sass cannot return a function from a
                     function. Sorry.
                   </li>
                   <li class="text-intro">
-                    ❌ Anonymous functions don't exist in Sass. This results in
-                    having to store references to functions in globals to access
-                    them later.
+                    ❌ Because closures don't exist in Sass we have to store
+                    references to arguments in globals to access them later in
+                    other functions.
                   </li>
                   <li class="text-intro">
                     ✅ By making use of Sass-True and Jest I could code using
                     test driven development.
                   </li>
                   <li class="text-intro">
-                    ✅ Refreshed my knowledge of Sass. Maybe you can teach an
-                    old dog new tricks! :D
+                    ✅ Refreshed my knowledge of Sass. Did you know sass has []
+                    arrays?
                   </li>
                   <li class="text-intro">
                     ✅ Gatsby is amazing. Scaffold a site in minutes with
@@ -705,9 +706,9 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                     ✅ I have a CI server without any free tier limitations!!!!
                   </li>
                   <li class="text-intro">
-                    😱 Don't do like me and set a semantic-release
-                    plugin without reading the docs. They don't extend they
-                    override completely.
+                    😱 Don't do like me and set a semantic-release plugin
+                    without reading the docs. They don't extend they override
+                    completely.
                   </li>
                 </ul>
               </div>
@@ -771,7 +772,9 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
     <script src="static/js/prism.js"></script>
     <script src="static/js/webslides.js"></script>
     <script>
-      window.ws = new WebSlides();
+      window.ws = new WebSlides({
+        navigateOnScroll: false,
+      });
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
