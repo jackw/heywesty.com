@@ -141,7 +141,7 @@
               Grafana Presentation
             </p>
             <h1 class="text-uppercase" style="margin-top: 3rem;">
-              An Adventure in Learningland!
+              A recent adventure in Learning-land!
             </h1>
           </div>
         </section>
@@ -168,6 +168,9 @@
             <h1>Why?</h1>
             <ul class="flexblock specs size-50">
               <li class="text-intro">
+                Reading is great but I think a hands on approach can solidify learning.
+              </li>
+              <li class="text-intro">
                 I believe reading source code gives a developer a deeper
                 understanding of the libraries they're using.
               </li>
@@ -181,10 +184,7 @@
                 infrastructure.
               </li>
               <li class="text-intro">
-                Experiment with some tech I'm not familiar with.
-              </li>
-              <li class="text-intro">
-                Learn something new and have fun along the way!
+                Have fun with some tech I'm not familiar with and learn something new.
               </li>
             </ul>
           </div>
@@ -199,15 +199,18 @@
             <ul class="flexblock specs size-50">
               <li class="text-intro">
                 Potentially. If I want to use Ramda to build CSS frameworks I
-                believe the quickest route is to use PostCSS.
+                think the quickest route is to use PostCSS.
               </li>
               <li class="text-intro">
                 <p>
                   I'm not the only one to think of doing this. David Khourshid
-                  wrote SassDash (a port of Lodash to Sass) a few years ago.
+                  wrote <strong>SassDash</strong> (a port of Lodash to Sass) a few years ago.
                   According to github insights - SassDash is currently
                   <strong>used by 176 repositories and 28 packages</strong>.
                 </p>
+              </li>
+              <li class="text-intro">
+                <p>Frontend (and tech in general) is <strong>constantly evolving</strong>. If we're not invested in learning we're gonna fall behind.</p>
               </li>
             </ul>
           </div>
@@ -276,7 +279,7 @@
                   />
                   <figcaption>
                     <h3>Jest</h3>
-                    <p>Combined with SASS-TRUE for testing SCSS.</p>
+                    <p>Combined with SASS-TRUE for testing Sass.</p>
                   </figcaption>
                 </figure>
               </li>
@@ -389,7 +392,7 @@
     $satisfy: ();
     $dissatisfy: ();
     @each $item in $filterable {
-        $truthy: if(call(get-function($pred), $item), true, false);
+        $truthy: call(get-function($pred), $item);
         @if $truthy {
             $satisfy: append($satisfy, $item);
         } @else {
@@ -449,7 +452,7 @@
               <li>
                 <figure>
                   <p
-                    style="height: 180px; margin-bottom: 0;"
+                    style="height: 180px; margin-bottom: 0; padding-top: 2.4rem;"
                     class="aligncenter text-emoji"
                   >
                     👩‍🎤
@@ -539,7 +542,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                   />
                   <figcaption>
                     <h3>Commitizen</h3>
-                    <p>CLI for commit message conventions</p>
+                    <p>CLI for git commit message conventions.</p>
                   </figcaption>
                 </figure>
               </li>
@@ -552,7 +555,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                   />
                   <figcaption>
                     <h3>Drone</h3>
-                    <p>Continous delivery platform built on docker</p>
+                    <p>Continous delivery platform built on docker.</p>
                   </figcaption>
                 </figure>
               </li>
@@ -656,7 +659,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                     function. Sorry.
                   </li>
                   <li class="text-intro">
-                    ❌ Because closures don't exist in Sass we have to store
+                    ❌ Closures don't exist in Sass so at times I store
                     references to arguments in globals to access them later in
                     other functions.
                   </li>
