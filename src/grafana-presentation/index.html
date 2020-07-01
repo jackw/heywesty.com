@@ -151,7 +151,7 @@
             <h1 class="text-uppercase">Sass-Fire</h1>
             <div class="wrap size-50" style="margin-top: 2rem;">
               <p class="text-intro">
-                Sass fire is an open source collection of Sass utility functions
+                Sass-fire is an open source collection of Sass utility functions
                 inspired by reading the Ramda docs and source code. More
                 importantly this project is an exploration into learning by
                 doing.
@@ -217,8 +217,8 @@
               </li>
               <li class="text-intro">
                 <p>
-                  <strong>Tech is constantly evolving</strong>.
-                  If we're not <strong>invested in learning</strong> we're gonna fall behind.
+                  <strong>Tech is constantly evolving</strong>. If we're not
+                  <strong>invested in learning</strong> we're gonna fall behind.
                 </p>
               </li>
             </ul>
@@ -293,7 +293,7 @@
                   />
                   <figcaption>
                     <h3>Jest</h3>
-                    <p>Combined with SASS-TRUE for testing Sass.</p>
+                    <p>Combined with Sass-True for testing Sass.</p>
                   </figcaption>
                 </figure>
               </li>
@@ -636,17 +636,17 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                 <h1 style="margin-bottom: 3rem;">The result</h1>
                 <p class="text-intro">
                   By writing commit messages with semver in mind we can take
-                  advantage of semantic release to version and publish packages
+                  advantage of semantic-release to version and publish packages
                   appropriately.
                 </p>
                 <p class="text-intro">
-                  Using Drone with Semantic release gives us a workflow that
+                  Using Drone with semantic-release gives us a workflow that
                   meets the requirements for automated publishing and updating
                   documentation.
                 </p>
               </div>
               <div class="column">
-                <h3>Semver</h3>
+                <h3>Semantic Versioning (semver)</h3>
                 <img
                   src="static/images/semver.png"
                   alt="semantic release example"
@@ -675,7 +675,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                   <li class="text-intro">
                     ❌ Closures don't exist in Sass so at times I store
                     references to arguments in globals to access them later in
-                    other functions.
+                    other functions. Ewwww.
                   </li>
                   <li class="text-intro">
                     ✅ By making use of Sass-True and Jest I could code using
@@ -687,7 +687,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                   </li>
                   <li class="text-intro">
                     ✅ Gatsby is amazing. Scaffold a site in minutes with
-                    pluggable data management (GraphQL + gatsby source plugins)
+                    pluggable data management (GraphQL + Gatsby source plugins)
                     and a view layer (React) making it very easy to put sites
                     together.
                   </li>
@@ -701,9 +701,9 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
               <div class="column">
                 <ul class="flexblock specs">
                   <li class="text-intro">
-                    ❌ Easy to navigate documentation is key to adoption of any
-                    open source project. I struggled a lot with Minerial-ui's
-                    docs.
+                    ❌ I struggled a lot with Minerial-ui's docs. Easy to
+                    navigate documentation is key to adoption of any open source
+                    project.
                   </li>
                   <li class="text-intro">
                     ✅ Semantic release generates release, changelog, publishes
@@ -716,14 +716,14 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                   </li>
                   <li class="text-intro">
                     ❌ Docker in Docker networking can be confusing. I spent a
-                    lot of time figuring out why a step container couldn't
-                    trigger the documentation site build
+                    lot of time figuring out why a build step couldn't trigger
+                    the documentation site build.
                   </li>
                   <li class="text-intro">
                     ✅ I have a CI server without any free tier limitations!!!!
                   </li>
                   <li class="text-intro">
-                    😱 Don't do like me and set a semantic-release plugin
+                    😱 Don't do like me and configure a semantic-release plugin
                     without reading the docs. They don't extend they override
                     completely.
                   </li>
@@ -738,17 +738,17 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
             style="background-image: url('static/images/alice-feedback.gif');"
           ></div>
           <div class="wrap">
-            <h1>Feedback</h1>
+            <h1>Community Feedback</h1>
             <ul class="flexblock specs size-50">
               <li class="text-intro">
                 Most developers I've shown it to either star it on github out of
                 curiosity or call me crazy!
               </li>
               <li class="text-intro">
-                Some think it's going to make Sass complicated. I don't
-                think there's any harm in exposing some of the tools that we
-                have in JS. Similar methods across languages can make code
-                easier to read and more accessible to frontenders.
+                Some think it's going to make Sass complicated. I don't think
+                there's any harm in exposing some of the tools that we have in
+                JS. Similar methods across languages can make code easier to
+                read and more accessible to frontenders.
               </li>
             </ul>
           </div>
@@ -756,19 +756,22 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
         <section class="aligncenter">
           <div class="wrap">
             <h1 style="margin-bottom: 3rem;">Next Steps</h1>
-            <p class="text-intro">
-              I'm surprised how much fun I've had with this little project. I
-              plan to bring as much usefulness from Ramda to this library.
-            </p>
-            <p class="text-intro">
-              Expand the docs with a cookbook! Some examples of how a developer
-              could use this to write a framework might help onboarding.
-            </p>
-            <p class="text-intro">
-              I could package the sassdoc script I wrote as a gatsby source
-              plugin. Maybe a frontend developer somewhere could find it useful?
-              🤷‍♂️
-            </p>
+            <ul class="flexblock specs size-50">
+              <li class="text-intro">
+                🐏 With the project, documentation site and pipeline setup I
+                plan to bring as much usefulness from Ramda to Sass-fire.
+              </li>
+              <li class="text-intro">
+                👨‍🍳 Expand the docs with a cookbook! Some examples of how a
+                developer could use this to write a framework might help
+                onboarding.
+              </li>
+              <li class="text-intro">
+                📦 I could create a Gatsby Sass-doc starter kit for the Gatsby
+                community. Maybe a frontend developer somewhere could find it
+                useful?
+              </li>
+            </ul>
           </div>
         </section>
         <section class="aligncenter">
