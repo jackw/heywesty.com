@@ -141,7 +141,7 @@
               Grafana Presentation
             </p>
             <h1 class="text-uppercase" style="margin-top: 3rem;">
-              A recent adventure in Learning-land!
+              An Adventure in Learning-land!
             </h1>
           </div>
         </section>
@@ -168,7 +168,8 @@
             <h1>Why?</h1>
             <ul class="flexblock specs size-50">
               <li class="text-intro">
-                Reading is great but I think a hands on approach can solidify learning.
+                Reading is great but I think a hands on approach can solidify
+                learning.
               </li>
               <li class="text-intro">
                 I believe reading source code gives a developer a deeper
@@ -184,7 +185,8 @@
                 infrastructure.
               </li>
               <li class="text-intro">
-                Have fun with some tech I'm not familiar with and learn something new.
+                Have fun with some tech I'm not familiar with and learn
+                something new.
               </li>
             </ul>
           </div>
@@ -198,19 +200,26 @@
             <h1>Is this a crazy idea?</h1>
             <ul class="flexblock specs size-50">
               <li class="text-intro">
-                Potentially. If I want to use Ramda to build CSS frameworks I
-                think the quickest route is to use PostCSS.
-              </li>
-              <li class="text-intro">
                 <p>
                   I'm not the only one to think of doing this. David Khourshid
-                  wrote <strong>SassDash</strong> (a port of Lodash to Sass) a few years ago.
-                  According to github insights - SassDash is currently
+                  wrote <strong>SassDash</strong> (a port of Lodash to Sass) a
+                  few years ago. According to github insights SassDash is
+                  currently
                   <strong>used by 176 repositories and 28 packages</strong>.
                 </p>
               </li>
               <li class="text-intro">
-                <p>Frontend (and tech in general) is <strong>constantly evolving</strong>. If we're not invested in learning we're gonna fall behind.</p>
+                <p>
+                  If I want to
+                  <strong>use Ramda to build CSS frameworks</strong> I think the
+                  quickest route is to use <strong>PostCSS</strong>.
+                </p>
+              </li>
+              <li class="text-intro">
+                <p>
+                  <strong>Tech is constantly evolving</strong>.
+                  If we're not <strong>invested in learning</strong> we're gonna fall behind.
+                </p>
               </li>
             </ul>
           </div>
@@ -219,6 +228,11 @@
           <div class="wrap">
             <h1>Goals</h1>
             <ul class="flexblock specs size-50">
+              <li class="text-intro">
+                <p>
+                  I would like a <strong>better understanding of Ramda</strong>.
+                </p>
+              </li>
               <li class="text-intro">
                 <p>
                   I would like a Sass library that
@@ -354,7 +368,7 @@
 @include describe('partition [function]') {
     @include it('should split the list according to the predicate') {
         @include assert-equal(
-            partition(isEven, (1, 2, 3, 4)),
+            partition(isEven, [1, 2, 3, 4]),
             ((2 4), (1 3))
         );
         @include assert-equal(
@@ -507,7 +521,7 @@
                 </p>
                 <pre
                   class="language-javascript"
-                ><code>// parse SCSS to generate JSON docs data...
+                ><code>// Parse SCSS to generate JSON docs data...
 sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
   .then(data => {
     fs.writeFileSync(
@@ -520,7 +534,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
               </div>
               <div class="column">
                 <video
-                  style="height: 720px;"
+                  style="height: 800px;"
                   src="static/images/documentation.mp4"
                   autoplay
                   loop
@@ -581,7 +595,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                   />
                   <figcaption>
                     <h3>Github Pages</h3>
-                    <p>Host the built Gatsby output (HTML, CSS, JS).</p>
+                    <p>Host the Gatsby build output (HTML, CSS, JS).</p>
                   </figcaption>
                 </figure>
               </li>
@@ -619,7 +633,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
           <div class="wrap">
             <div class="grid sm vertical-align text-cols">
               <div class="column">
-                <h1>The result</h1>
+                <h1 style="margin-bottom: 3rem;">The result</h1>
                 <p class="text-intro">
                   By writing commit messages with semver in mind we can take
                   advantage of semantic release to version and publish packages
@@ -632,7 +646,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                 </p>
               </div>
               <div class="column">
-                <h3>Semantic Release</h3>
+                <h3>Semver</h3>
                 <img
                   src="static/images/semver.png"
                   alt="semantic release example"
@@ -655,8 +669,8 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
               <div class="column">
                 <ul class="flexblock specs">
                   <li class="text-intro">
-                    ❌ Ramda is all about currying. Sass cannot return a function from a
-                    function. Sorry.
+                    ❌ Ramda is all about currying. Sass cannot return a
+                    function from a function. Sorry.
                   </li>
                   <li class="text-intro">
                     ❌ Closures don't exist in Sass so at times I store
@@ -693,7 +707,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                   </li>
                   <li class="text-intro">
                     ✅ Semantic release generates release, changelog, publishes
-                    package to npm, and adds comments on issues. ❤️
+                    package to npm, and adds comments on PRs.
                   </li>
                   <li class="text-intro">
                     ✅ Drone-ci uses docker in docker so it can use any image
@@ -731,7 +745,7 @@ sassdoc.parse(sassFirePath, { verbose: true, config: configFile })
                 curiosity or call me crazy!
               </li>
               <li class="text-intro">
-                Some think it's going to make frameworks complicated. I don't
+                Some think it's going to make Sass complicated. I don't
                 think there's any harm in exposing some of the tools that we
                 have in JS. Similar methods across languages can make code
                 easier to read and more accessible to frontenders.
